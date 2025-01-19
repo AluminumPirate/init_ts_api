@@ -1,0 +1,32 @@
+{
+  "name": "my-api",
+  "version": "1.0.0",
+  "description": "An out-of-the-box Node.js + TypeScript API server",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "nodemon",
+    "start:dev": "nodemon --watch src --ignore dist --exec \"npm run build && node dist/server.js\"",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.7",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^8.0.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "nodemon": "^3.1.9",
+    "npm": "^11.0.0",
+    "prettier": "^2.0.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^5.7.3"
+  }
+}
